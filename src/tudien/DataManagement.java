@@ -46,7 +46,7 @@ public class DataManagement {
     public static void loadData() {
         try {
             File file = new File("inOut.txt");
-            if (file.exists()) {
+            if (!file.exists()) {
                 file.createNewFile();
                 return;
             }
